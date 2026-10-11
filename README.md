@@ -43,7 +43,7 @@ The project uses the following technologies that are actually present in the rep
 - CSS3 — custom styling, layout, color themes, and responsive design
 - Bootstrap 5 — navigation, layout components, and styling utilities from Bootstrap CDN
 - JavaScript — interactive lecture tabs, theme switching, and contact form behavior
-- PHP — used only for the root redirect from `index.php` to the frontend entry page
+- PHP — used only for the local XAMPP redirect from `index.php` to the home page
 - Git and GitHub — version control and repository hosting
 - GitHub Pages — live deployment URL used for the published website
 - XAMPP / Apache — used for local development and running the project on a local machine
@@ -66,41 +66,36 @@ To run the site locally:
 3. Open the following URL in a browser:
    `http://localhost/BAUTISTA_TW/`
 
-The root `index.php` file redirects to the frontend entry page, which is `frontend/index.html`.
+The root `index.php` file redirects to `index.html` when running locally through XAMPP. GitHub Pages serves the root `index.html` directly.
 
 ## Project Structure
 
 ```text
 BAUTISTA_TW/
 ├── README.md
+├── index.html
 ├── index.php
-├── frontend/
-│   ├── index.html
-│   ├── assets/
-│   │   ├── css/
-│   │   │   └── style.css
-│   │   ├── images/
-│   │   └── js/
-│   │       └── script.js
-│   └── pages/
-│       ├── about.html
-│       ├── contact.html
-│       └── lectures.html
-└── .git/
+├── assets/
+│   ├── css/
+│   │   └── style.css
+│   └── js/
+│       └── script.js
+└── pages/
+    ├── about.html
+    ├── contact.html
+    └── lectures.html
 ```
 
 ### File and directory overview
 
 - `README.md` — project documentation and usage instructions
-- `index.php` — entry redirect that sends the root request to the frontend website
-- `frontend/index.html` — home page
-- `frontend/assets/css/style.css` — custom CSS for layout, colors, theme, and page styling
-- `frontend/assets/js/script.js` — JavaScript for theme toggle, lecture tab interactions, and contact form behavior
-- `frontend/assets/images/` — image assets directory present in the project
-- `frontend/pages/lectures.html` — lecture topics and interactive technical writing content
-- `frontend/pages/about.html` — author information and academic background
-- `frontend/pages/contact.html` — contact information and email form
-- `.git/` — Git metadata for version control
+- `index.html` — GitHub Pages home page
+- `index.php` — optional local XAMPP redirect to `index.html` (GitHub Pages does not run PHP)
+- `assets/css/style.css` — custom CSS for layout, colors, theme, and page styling
+- `assets/js/script.js` — JavaScript for theme toggle, lecture tab interactions, and contact form behavior
+- `pages/lectures.html` — lecture topics and interactive technical writing content
+- `pages/about.html` — author information and academic background
+- `pages/contact.html` — contact information and email form
 
 ## Technical Writing Lecture Content
 
